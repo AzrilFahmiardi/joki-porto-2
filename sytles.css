@@ -1,0 +1,288 @@
+body {
+    background-color: #1E1E1E;
+    height: 1600px;
+    
+}
+
+.sosmed {
+    display: flex;
+}
+
+.sosmed ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+   
+}
+
+
+
+.sosmed ul li a {
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.sosmed ul li a:hover {
+    transform: translate(0,5px);
+}
+
+.sosmed ul li a img{
+    height: 30px;
+    width: 30px;
+}
+
+.profile {
+    width: 70%;
+    height: 400px;
+    margin: 200px auto 300px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pict {
+    width: 30%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.profile-pict:hover {
+    transform: translate(0, -10px);
+}
+
+.profile-pict  img{
+
+    height: 400px;
+}
+
+.profile-information {
+    width: 70%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    
+
+
+}
+
+.profile-desc {
+    height: 50%;
+    width: 80%;
+    background-color: #30343F;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+
+.profile-desc:hover {
+    transform: translate(0, -10px);
+}
+
+.profile-desc .name {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.profile-desc .name h1 {
+    font-family: "Anonymous Pro", monospace;
+    margin: 30px 0;
+    
+}
+
+.profile-desc .name .hello::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    left: 0;
+    bottom: -8px;
+    width: 370%;
+  }
+
+.profile-desc .name .hello {
+    margin-left: 40px;
+    color: white;
+}
+.profile-desc .name .hello-name {
+    color: #BA7E7E;
+}
+
+.profile-desc p {
+    margin-left: 40px;
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.68);
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.profile-link {
+    padding-left: 40px;
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.profile-link button {
+    background-color: rgba(255, 217, 218, 0.66);
+    border: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 1000;
+    
+}
+
+.profile-link button:hover {
+    background-color: rgba(255, 217, 218, 1);
+
+}
+
+.profile-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.add-information {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.add-information .about-me {
+    flex: 2;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('./assets/vector2.png');
+    background-color: rgba(255, 217, 218, 0.66);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 30px 40px;
+}
+
+.about-me h1 {
+    margin-left: 20px;
+    font-family: "Anonymous Pro", monospace;
+    color: #1E1E1E;
+    font-size: 3em;
+    
+}
+
+.about-me p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color:rgba(255, 217, 218, 0.822) ;
+    color: #fff;
+}
+
+
+
+.add-information .message-container {
+    flex: 1;
+    height: 300px;
+    background-color: rgba(255, 217, 218, 0.66);
+    border-radius: 40px;
+    padding: 30px 20px;
+
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+
+}
+
+.message-form textarea {
+    border-radius: 20px;
+    padding: 20px 20px;
+    border: none;
+}
+
+.message-form input[type="submit"] {
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: bolder;
+
+}
+.message-form input[type="submit"]:hover {
+    background-color: #89023E;
+    color: #fff;
+
+}
+
+.message-form input[type="submit"]:active {
+    transform: scale(1.02);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movepage {
+    border: none;
+    background-color: rgba(255, 217, 218, 0.66);
+    height: 30px;
+    width: 160px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: bolder;
+}
+
+.movepage:hover {
+    background-color: rgba(255, 217, 218, 0.192);
+    
+}
+
+.movepage:hover a {
+    color: #fff;
+}
+
+.movepage a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+
+
+
+
